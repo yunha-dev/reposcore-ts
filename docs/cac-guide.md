@@ -8,7 +8,7 @@
 
 ---
 
-## 1. cac란?
+## cac란?
 
 cac는 Node.js/TypeScript 환경에서 CLI 프로그램을 쉽게 만들 수 있도록 도와주는 라이브러리입니다.
 
@@ -18,7 +18,7 @@ cac는 Node.js/TypeScript 환경에서 CLI 프로그램을 쉽게 만들 수 있
 
 ---
 
-## 2. 설치 방법 (bun 기준)
+## 설치 방법 (bun 기준)
 
 다음 명령어로 설치합니다.
 
@@ -28,7 +28,7 @@ bun add cac
 
 ---
 
-## 3. 기본 사용 예시
+## 기본 사용 예시
 
 ```ts
 import { cac } from 'cac'
@@ -47,7 +47,7 @@ cli.parse()
 
 ---
 
-## 4. 옵션(option) 사용
+## 옵션(option) 사용
 
 ```ts
 import { cac } from 'cac'
@@ -78,7 +78,7 @@ Hello kim
 
 ---
 
-## 5. help 기능
+## help 기능
 
 ```ts
 cli.help()
@@ -92,7 +92,7 @@ bun run index.ts --help
 
 ---
 
-## 6. 정리
+## 정리
 
 - CLI 프로그램을 쉽게 만들 수 있음
 - command 기반 구조 지원
@@ -101,7 +101,7 @@ bun run index.ts --help
 
 ---
 
-## 7. 목적
+## 목적
 
 - CLI 개발 방식 통일
 - 유지보수성 향상
