@@ -11,6 +11,10 @@
 Node.js 대신 TypeScript를 별도 컴파일 없이 직접 실행할 수 있으며,
 패키지 매니저(`bun install`), 테스트 러너(`bun test`), 번들러(`bun build`)를 모두 내장하고 있습니다.
 
+> **참고:** bun과 bunx의 차이
+> - bun : 패키지 설치 및 프로젝트 실행 (`bun install`, `bun run` 등)
+> - bunx : 패키지를 일회성으로 실행하는 명령어 (`npx`와 유사)
+
 ---
 
 ##  Codespaces에서 Bun 설치
@@ -119,12 +123,6 @@ bun remove <패키지명>
 | `types` | `["bun"]` | Bun 전용 타입(`Bun.file` 등) 사용 |
 | `noEmit` | `true` | Bun이 직접 실행하므로 JS 파일 출력 불필요 |
 
-타입 검사만 별도로 수행하려면 아래 명령을 사용합니다.
-
-```bash
-bunx tsc --noEmit
-```
-
 ---
 
 ##  자주 사용하는 명령 요약
@@ -136,7 +134,8 @@ bunx tsc --noEmit
 | `bun test` | 전체 테스트 실행 |
 | `bun add <pkg>` | 패키지 추가 |
 | `bun remove <pkg>` | 패키지 제거 |
-| `bunx tsc --noEmit` | 타입 검사만 수행 |
+| `bun tsc --noEmit` | 타입 검사만 수행 |
+
 
 ---
 
