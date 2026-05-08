@@ -76,6 +76,7 @@ cli
         const errorMessage = error instanceof Error ? error.message : String(error);
         console.error(`오류: '${repoPath}'의 데이터를 가져올 수 없습니다.`);
         console.error(`상세 원인: ${errorMessage}`);
+        process.exit(1);
       }
     }
   });
