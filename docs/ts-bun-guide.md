@@ -134,10 +134,8 @@ bun remove <패키지명>
 | `bun test` | 전체 테스트 실행 |
 | `bun add <pkg>` | 패키지 추가 |
 | `bun remove <pkg>` | 패키지 제거 |
-| `bunx tsc --noEmit` | 타입 검사만 수행 |
+| `bun tsc --noEmit` | 타입 검사만 수행 |
 
-> **참고:** 현재 프로젝트에서는 별도 script 설정 없이 TypeScript CLI를 실행하기 위해 `bunx tsc --noEmit`을 사용합니다.
-> **추후** `package.json`에 script가 추가되면 `bun tsc --noEmit` 방식으로 통일할 수 있습니다.
 
 ---
 
